@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main-container">
+    <h1>Advanced Styling and JavaScript</h1>
+
+    <!-- Responsive Section -->
+    <section class="responsive-box">
+      <p> </p>
+    </section>
+
+    <!-- Quiz Section -->
+    <section>
+      <h2>Quiz: What is 2 + 2?</h2>
+      <button onclick="checkAnswer(3)">3</button>
+      <button onclick="checkAnswer(4)">4</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- Carousel Section -->
+    <section>
+      <h2>Image Carousel</h2>
+      <div class="carousel-container">
+        <img id="carouselImage" src="" alt="Image Carousel">
+        <div class="buttons">
+          <button onclick="prevImage()">Previous</button>
+          <button onclick="nextImage()">Next</button>
+        </div>
+        <div id="indicators" class="indicators"></div>
+      </div>
+    </section>
+   </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

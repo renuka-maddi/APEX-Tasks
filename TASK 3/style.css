@@ -1,0 +1,82 @@
+/* Full-page reset and center layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start; /* change to center if you want full vertical centering */
+  background-color: #f9f9f9;
+}
+
+.main-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2b6777;
+}
+
+.responsive-box {
+  background-color: lightblue;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.carousel-container img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.indicators {
+  margin-top: 10px;
+}
+
+.indicators span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.indicators .active {
+  background-color: #2b6777;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+    font-size: 14px;
+  }
+
+  .main-container {
+    margin: 10px;
+  }
+}
